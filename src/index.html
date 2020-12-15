@@ -1,29 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <title>HW-13</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-  <title>HW-13</title>
+  <body>
+    <form class="search-form js-form" id="search-form">
+      <input
+        class="form-control"
+        type="text"
+        name="query"
+        autocomplete="off"
+        placeholder="Type to search images..."
+      />
+    </form>
 
-</head>
+    <ul class="gallery js-gallery"></ul>
 
-<body>
-  <form class="search-form js-form" id="search-form">
-    <label for="exampleDataList" class="form-label">⏎</label>
-    <input class="form-control" type="text" name="query" autocomplete="off" placeholder="Type to search images..." />
-  </form>
-
-  <ul class="gallery js-gallery"></ul>
-
-  <button type="button" class="btn btn-primary button is-hidden btn-js" data-action="load-more"><span
-      class="spinner is-hidden spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
-    <span class="label">MOAR!!</span></button>
-
-</body>
-
+    <button
+      type="button"
+      class="btn btn-primary button is-hidden btn-js"
+      data-action="load-more"
+    >
+      <span
+        class="spinner is-hidden spinner-grow spinner-grow-sm"
+        role="status"
+        aria-hidden="true"
+      ></span>
+      <span class="label">MOAR!!</span>
+    </button>
+  </body>
 </html>
